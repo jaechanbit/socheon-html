@@ -94,7 +94,15 @@ em { font-family: "Gowun Batang", serif; color: var(--orange); font-style: norma
 .mini-paddle { position:absolute; width:100px; height:112px; left:50%; top:0; transform:translateX(-50%) rotate(-26deg); border:5px solid var(--ink); border-radius:50%; background:var(--orange); }
 .mini-paddle::after { content:""; position:absolute; width:23px; height:75px; left:34px; bottom:-66px; background:var(--ink); border-radius:0 0 8px 8px; }
 .mini-ball { position:absolute; width:28px; height:28px; right:16%; top:5px; border-radius:50%; background:var(--paper); }
-.plus { height: 150px; display:grid; place-items:center; font-family:"Gowun Batang"; font-size:96px; font-weight:200; color:var(--lime); }
+.game-icon { position: relative; width: 150px; height: 92px; margin: 29px auto; border: 5px solid var(--lime); border-radius: 45px 45px 32px 32px; }
+.game-handle { position: absolute; width: 48px; height: 60px; bottom: -34px; border: 5px solid var(--lime); border-top: 0; }
+.game-handle.left { left: -5px; border-radius: 0 0 12px 30px; transform: rotate(10deg); }
+.game-handle.right { right: -5px; border-radius: 0 0 30px 12px; transform: rotate(-10deg); }
+.game-cross::before, .game-cross::after { content: ""; position: absolute; top: 39px; left: 27px; width: 28px; height: 6px; border-radius: 4px; background: var(--lime); }
+.game-cross::after { transform: rotate(90deg); }
+.game-button { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--orange); }
+.game-button.one { right: 35px; top: 31px; }
+.game-button.two { right: 22px; top: 46px; }
 .skill-card h3 { margin: 0 0 14px; font-size: 28px; }
 .skill-card h3 span { margin-left: 6px; font-size: 9px; letter-spacing: 1px; opacity: .6; }
 .skill-card p { margin: 0; font-size: 14px; line-height: 1.7; opacity: .7; }
